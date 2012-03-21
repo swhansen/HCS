@@ -1,0 +1,13 @@
+<header>
+	<% logo = image_tag("hcs_logo.gif", :alt=> "SampleApp", :class=> "round")%>
+	<%= link_to logo, root_path %>
+	<nav class="round">
+		<ul>
+			<li><%= link_to "Home", root_path %></li>
+			<li><%= link_to "About", about_path %></li>
+			<li><%= link_to "Help", help_path %></li>
+			<li><%= link_to "Sign in", '#'%></li>
+			<button>Click me</button>
+		</ul>
+	</nav>
+</header>

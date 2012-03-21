@@ -1,0 +1,109 @@
+.container
+{
+	width: 710px;
+}
+BODY
+{
+	background: #3F9090;
+}
+HEADER
+{
+	padding-top: 20px;
+}
+HEADER IMG
+{
+	padding: 1em;
+	background: #FFF;
+}
+SECTION
+{
+	margin-top: 1em;
+	font-size: 120%;
+	padding: 20px;
+	background: #FFF;
+}
+SECTION H1
+{
+	font-size: 200%;
+}
+/*Links*/
+A
+{
+	color: #09C;
+	text-decoration: none;
+}
+A:hover
+{
+	color: #069;
+	text-decoration: underline;
+}
+A:visited
+{
+	color: #069;
+}
+/*Navigation*/
+NAV
+{
+	float: right;
+}
+NAV
+{
+	background-color: #FFFFFF;
+	padding: 0 0.7em;
+	white-space: nowrap;
+}
+NAV UL
+{
+	margin: 0;
+	padding: 0;
+}
+NAV UL LI
+{
+	list-style-type: none;
+	display: inline-block;
+	padding: 0.2em 0;
+}
+NAV UL LI A
+{
+	padding: 0 5px;
+	font-weight: bold;
+}
+NAV UL LI A:visited
+{
+	color: #09C;
+}
+NAV UL LI A:hover
+{
+	text-decoration: underline;
+}
+/*Sign up button*/
+A.signup_button
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	width: 190px;
+	color: #FFF;
+	background: #E8124E;
+	font-size: 150%;
+	font-weight: bold;
+	padding: 20px;
+}
+/*Round corners*/
+.round
+{
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+footer{
+text-align: center;
+margin-top: 10px;
+width: 710px;
+margin-left:auto;
+margin-right:auto;
+}
+footernav{
+float:none;
+}
