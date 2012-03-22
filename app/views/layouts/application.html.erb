@@ -3,125 +3,47 @@
 	<head>
 		<title><%= title %></title>
 		<%= csrf_meta_tag%>
-		<%= render 'layouts/stylesheets' %>
-		<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-  $("button").click(function(){
-    $(this).hide();
-  });
-});
-</script>
+		<%= render 'layouts/stylesheets' %> <script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("button").click(function() {
+					$(this).hide();
+				});
+			});
+			$(function() {
+				$("#accordion").accordion({
+					fillSpace : true
+				});
+			});
+			$(function() {
+				$("#accordionResizer").resizable({
+					minHeight : 140,
+					resize : function() {
+						$("#accordion").accordion("resize");
+					}
+				});
+			});
+			$(function() {
+				$("#check").button();
+				$("#format").buttonset();
+			});
 
-<script>
-	$(function() {
-		$( "#accordion" ).accordion({
-			autoHeight: false,
-			navigation: true
-		});
+$(function() {
+		$( "#radio" ).buttonset();
 	});
-	</script>
 
-</head>
+
+
+		</script>
+	</head>
 	</head>
 	<body>
 		<div class= "container" >
 			<%= render 'layouts/header' %>
+			<%= render 'layouts/progress' %>
 			<section class="round">
 				<%= yield %>
-			</section>	
-			
-			<div class="demo">
-
-<div class="demo">
-
-<div id="accordion">
-	<h3><a href="#section1">Discuss Barrier: Injection Concerns</a></h3>
-	<div>
-		<table border="1">
-<tr>
-<td>Needle Anxiety</td>
-<td>Rational/Irrational</td>
-<td>
-	<ul>
-		<li>Normailize as a common concern</li>
-		<li>Provide basic education from other injections</li>
-		<li>Mental rehersal</li>
-	</ul>
-</td>
-</tr>
-<tr>
-<td>Pain</td>
-<td>
-	<ul>
-		<li>Pain of the needle</li>
-		<li>Pain after injecting</li>
-	</ul>
-<td>
-	<ul>
-		<li>Explain expectations influence percieved pain</li>
-		<li>Explain importance of being relaxed</li>
-		<li>Explain what to expect fron this type of injection</li>
-		<li>Walk through strategies to minimize pain</li>
-	</ul>
-</td>
-</tr>
-<tr>
-<td>Saftey</td>
-<td><ul>
-		<li>Strong medication</li>
-		<li>Children at home</li>
-		<li>Disposing of needles</li>
-	</ul></td>
-<td></td>
-</tr>
-</table> 
-	</div>
-	<h3><a href="#section2">Assess Adherence Barriers</a></h3>
-	<div>
-		<table border="1">
-<tr>
-<td>row 1, cell 1</td>
-<td>row 1, cell 2</td>
-</tr>
-<tr>
-<td>row 2, cell 1</td>
-<td>row 2, cell 2</td>
-</tr>
-</table> 
-	</div>
-	<h3><a href="#section3">Discuss Barrier</a></h3>
-	<div>
-		<p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
-		<ul>
-			<li>List item</li>
-			<li>List item</li>
-			<li>List item</li>
-			<li>List item</li>
-			<li>List item</li>
-			<li>List item</li>
-			<li>List item</li>
-		</ul>
-		<a href="#othercontent">Link to other content</a>
-	</div>
-	<h3><a href="#section4">Answer Questions</a></h3>
-	<div>
-		<p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
-		<ul>
-			<li>List item</li>
-			<li>List item</li>
-			<li>List item</li>
-			<li>List item</li>
-			<li>List item</li>
-			<li>List item</li>
-			<li>List item</li>
-		</ul>
-	
-	</div>
-</div>
-
-</div>
-					
+			</section>
 			<%= render 'layouts/footer' %>
 		</div>
 	</body>

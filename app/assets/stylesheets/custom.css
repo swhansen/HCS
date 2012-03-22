@@ -1,3 +1,10 @@
+
+/* Horizontal radio buttons*/
+.row_b .ui-btn {
+    text-align: center;
+    width: 24.5%;
+}
+
 .container {
   width: 710px;
 }
