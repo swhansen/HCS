@@ -19,4 +19,19 @@ class PagesController < ApplicationController
     @title = "Common Issues"
   end
  
+  def barriers
+    @title = "Barriers"
+  end
+  
+   def opening
+    @title = "Opening"
+  end
+  
+  def positive
+    @title = "Positive"
+  end
+  
+   def closing
+    @title = "Closing"
+  end
 end

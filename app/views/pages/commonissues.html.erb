@@ -1,55 +1,81 @@
 <h1>Common Issues</h1>
-<p></p>
+<div align=right style="padding: 0px 15px 0px 0px; font-weight:bold ">
+<p>Agree &nbsp; Not Sure &nbsp; Disagree</p>
+</div>
 <div>
-	<table border="1">
+	<table width="100%" border="1">
 		<tr>
-			<th>Header 1</th>
-			<th>Agree</th>
-			<th>Not Sure</th>
-			<th>Disgree</th>
+			<td>I sometimes forget to take my medications </td>
+			<td>
+			<form style="float: right; width: 200px">
+				<input type="radio" name="assesment" value="1" style="width: 50px" />
+				<input type="radio" name="assesment" value="2" style="width: 50px" />
+				<input type="radio" name="assesment" value="3" style="width: 50px"/>
+			</form></td>
 		</tr>
 		<tr>
-			<td>I sometimes forget to take my medication</td>
+			<td>I could use better medication routines </td>
 			<td>
-			<input type="radio" name="agree" value="t" />
-			<br />
-			</td>
-			<td>
-			<input type="radio" name="notsure" value="t" />
-			<br />
-			</td>
-			<td>3</td>
+			<form style="float: right; width: 200px">
+				<input type="radio" name="assesment" value="1" style="width: 50px" />
+				<input type="radio" name="assesment" value="2" style="width: 50px" />
+				<input type="radio" name="assesment" value="3" style="width: 50px"/>
+			</form></td>
 		</tr>
 		<tr>
-			<td>I could use better medication routines</td>
-			<td></td>
-			<td>2</td>
-			<td>3</td>
+			<td>I have side effects that bother me</td>
+			<td>
+			<form style="float: right; width: 200px">
+				<input type="radio" name="assesment" value="1" style="width: 50px" />
+				<input type="radio" name="assesment" value="2" style="width: 50px" />
+				<input type="radio" name="assesment" value="3" style="width: 50px"/>
+			</form></td>
+		</tr>
+		<tr>
+			<td>I have concerns about financial costs</td>
+			<td>
+			<form style="float: right; width: 200px">
+				<input type="radio" name="assesment" value="1" style="width: 50px" />
+				<input type="radio" name="assesment" value="2" style="width: 50px" />
+				<input type="radio" name="assesment" value="3" style="width: 50px"/>
+			</form></td>
+		</tr>
+		<tr>
+			<td>Sometimes taking my medications doesnt feel worth it</td>
+			<td>
+			<form style="float: right; width: 200px">
+				<input type="radio" name="assesment" value="1" style="width: 50px" />
+				<input type="radio" name="assesment" value="2" style="width: 50px" />
+				<input type="radio" name="assesment" value="3" style="width: 50px"/>
+			</form></td>
+		</tr>
+		<tr>
+			<td>I don't understand why IO'm supposed to be taking this medication or how it helps</td>
+			<td>
+			<form style="float: right; width: 200px">
+				<input type="radio" name="assesment" value="1" style="width: 50px" />
+				<input type="radio" name="assesment" value="2" style="width: 50px" />
+				<input type="radio" name="assesment" value="3" style="width: 50px"/>
+			</form></td>
+		</tr>
+		<tr>
+			<td>I have other questions or concerns related to my condition or medication</td>
+			<td>
+			<form style="float: right; width: 200px">
+				<input type="radio" name="assesment" value="1" style="width: 50px" />
+				<input type="radio" name="assesment" value="2" style="width: 50px" />
+				<input type="radio" name="assesment" value="3" style="width: 50px"/>
+			</form></td>
+		</tr>
+		<tr>
+			<td>I don't think a new type of medication would be likely to work for me</td>
+			<td>
+			<form style="float: right; width: 200px">
+				<input type="radio" name="assesment" value="1" style="width: 50px" />
+				<input type="radio" name="assesment" value="2" style="width: 50px" />
+				<input type="radio" name="assesment" value="3" style="width: 50px"/>
+			</form></td>
 		</tr>
 	</table>
-	<form>
-		<div id="radio">
-			<input type="radio" id="radio1" name="radio" />
-			<label for="radio1">Agree</label>
-			<input type="radio" id="radio2" name="radio" checked="checked" />
-			<label for="radio2">Not Sure</label>
-			<input type="radio" id="radio3" name="radio" />
-			<label for="radio3">Disagree</label>
-		</div>
-	</form>
-	<div data-role="fieldcontain">
-		<span>This is a long question that gets wrapped around in a small space on a desktop but it would be great if it occupied more of the wasted space on the right.</span>
-		<fieldset data-role="controlgroup" data-type="horizontal" data-ajax="true" class="row_b">
-			<input type="radio" name="q2" id="q2_0" value="0" />
-			<label for="q2_0">0</label>
-			<input type="radio" name="q2" id="q2_1" value="1" />
-			<label for="q2_1">1</label>
-			<input type="radio" name="q2" id="q2_2" value="2" />
-			<label for="q2_2">2</label>
-			<input type="radio" name="q2" id="q2_3" value="3" />
-			<label for="q2_3">7</label>
-		</fieldset>
-	</div>
+	<%=check_box_tag 'complete','Complete' -%> Complete
 </div>
-</div>
-</div> 
