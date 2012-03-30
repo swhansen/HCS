@@ -50,4 +50,67 @@ describe PagesController do
       response.should have_selector("title", :content => " | Help")
     end
   end
+  
+  
+  describe "GET 'barriers'" do
+    it "should be successful" do
+      get 'barriers'
+      response.should be_success
+    end
+
+    it "should have the right title" do
+      get 'barriers'
+      response.should have_selector("title", :content => " | Barriers")
+    end
+  end
+  
+  describe "GET 'opening'" do
+    it "should be successful" do
+      get 'opening'
+      response.should be_success
+    end
+
+    it "should have the right title" do
+      get 'opening'
+      response.should have_selector("title", :content => " | Opening")
+    end
+  end
+  
+  describe "GET 'closing'" do
+    it "should be successful" do
+      get 'closing'
+      response.should be_success
+    end
+
+    it "should have the right title" do
+      get 'closing'
+      response.should have_selector("title", :content => " | Closing")
+    end
+  end
+  
+  describe "GET 'positive'" do
+    it "should be successful" do
+      get 'positive'
+      response.should be_success
+    end
+
+    it "should have the right title" do
+      get 'positive'
+      response.should have_selector("title", :content => " | Positive")
+    end
+  end
+  
+  describe "GET 'commonissues'" do
+    it "should be successful" do
+      get 'commonissues'
+      response.should be_success
+    end
+
+    it "should have the right title" do
+      get 'commonissues'
+      response.should have_selector("title", :content => " | Common Issues")
+    end
+  end
+  
+  
 end
