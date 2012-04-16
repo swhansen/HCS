@@ -1,5 +1,7 @@
 Hcs::Application.routes.draw do
   
+  resources :clients
+
   resources :users
 
   get "users/new"
