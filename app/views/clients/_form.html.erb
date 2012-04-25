@@ -19,6 +19,13 @@
     <%= f.label :dob %><br />
     <%= f.date_select :dob, :start_year => 1920 %>
   </div>
+  
+  <div class="field">
+    <%= f.label :enrolldate %><br />
+    <%= f.date_select :enrolldate, :start_year => 2012 %>
+  </div>
+  
+  
   <div class="field">
     <%= f.label :location %><br />
     <%= f.text_field :location %>
@@ -30,6 +37,10 @@
   <div class="field">
     <%= f.label :age %><br />
     <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
   </div>
   <div class="field">
     <%= f.label :notes %><br />

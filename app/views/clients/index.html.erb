@@ -1,4 +1,4 @@
-<h1>Listing clients</h1>
+<h1>Clients</h1>
 
 <table>
   <tr>
@@ -19,8 +19,10 @@
     <td><%= client.location %></td>
     <td><%= client.sex %></td>
     <td><%= client.age %></td>
+    <td><%= link_to "New Session", {:controller => 'clients', :action => "opening", :id => client } %></td>
     <td><%= link_to 'Details', client %></td>
     <td><%= link_to 'Edit', edit_client_path(client) %></td>
+    
     <td><%= link_to 'Destroy', client, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
@@ -29,3 +31,5 @@
 <br />
 
 <%= link_to 'New Client', new_client_path %>
+
+

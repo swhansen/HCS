@@ -1,10 +1,15 @@
 Hcs::Application.routes.draw do
   
+  resources :sessions
+
   resources :clients
 
   resources :users
 
   get "users/new"
+
+
+match '/opening', :to => 'clients#opening'
 
   match '/signup', :to => 'users#new'
 
@@ -16,6 +21,9 @@ Hcs::Application.routes.draw do
   match '/opening', :to => 'pages#opening'
   match '/positive', :to => 'pages#positive'
   match '/closing', :to => 'pages#closing'
+  
+
+
 
   root :to => 'pages#home'
 
