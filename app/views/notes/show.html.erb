@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Session:</b>
+  <%= @note.session_id %>
+</p>
+
+<p>
+  <b>Barriercode:</b>
+  <%= @note.barriercode %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%= @note.note %>
+</p>
+
+<p>
+  <b>Datetime:</b>
+  <%= @note.datetime %>
+</p>
+
+
+<%= link_to 'Edit', edit_note_path(@note) %> |
+<%= link_to 'Back', notes_path %>

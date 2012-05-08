@@ -1,0 +1,29 @@
+<h1>Listing notes</h1>
+
+<table>
+  <tr>
+    <th>Session</th>
+    <th>Barriercode</th>
+    <th>Note</th>
+    <th>Datetime</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @notes.each do |note| %>
+  <tr>
+    <td><%= note.session_id %></td>
+    <td><%= note.barriercode %></td>
+    <td><%= note.note %></td>
+    <td><%= note.datetime %></td>
+    <td><%= link_to 'Show', note %></td>
+    <td><%= link_to 'Edit', edit_note_path(note) %></td>
+    <td><%= link_to 'Destroy', note, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Note', new_note_path %>

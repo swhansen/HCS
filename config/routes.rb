@@ -1,5 +1,7 @@
 Hcs::Application.routes.draw do
   
+  resources :notes
+
   resources :sessions
 
   resources :clients

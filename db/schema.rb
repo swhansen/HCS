@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120424205317) do
+ActiveRecord::Schema.define(:version => 20120506204926) do
 
   create_table "clients", :force => true do |t|
     t.string   "name"
@@ -24,6 +24,15 @@ ActiveRecord::Schema.define(:version => 20120424205317) do
     t.string   "notes"
     t.string   "phone"
     t.date     "enrolldate"
+  end
+
+  create_table "notes", :force => true do |t|
+    t.integer  "session_id"
+    t.string   "barriercode"
+    t.text     "note"
+    t.datetime "datetime"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "sessions", :force => true do |t|
