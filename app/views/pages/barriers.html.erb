@@ -8,27 +8,20 @@
 			<div>
 				<table border="1">
 					<tr>
-						<%= text_area_tag  :cols=>20,:rows=>5 %>
+
 						<td>Needle Anxiety</td>
-						<td>Rational/Irrational</td>
 						<td>
 						<ul>
-							<li>
-								Normailize as a common concern
-							</li>
-							<li>
-								Provide basic education from other injections
-							</li>
-							<li>
-								Mental rehersal
-							</li>							
-						</ul>			
-									
-						</td>													
+							</Irrational
+						</ul></td>
+						<td>
+						<ul>
+							<%= text_area_tag  :cols=>20,:rows=>5 %>
+						</ul></td>
 					</tr>
-				
+
 					<tr>
-						
+
 						<td>Pain</td>
 						<td>
 						<ul>
@@ -38,27 +31,16 @@
 							<li>
 								Pain after injecting
 							</li>
-						</ul><td>
-						<ul>
-							<li>
-								Explain expectations influence percieved pain
-							</li>
-							<li>
-								Explain importance of being relaxed
-							</li>
-							<li>
-								Explain what to expect fron this type of injection
-							</li>
-							<li>
-								Walk through strategies to minimize pain
-							</li>
 						</ul>
-						
+						<td>
+						<ul>
+						<%= 	text_area_tag  :cols=>20,:rows=>5 %>
+						</ul>
 						</td>
 					</tr>
-					
+
 					<tr>
-						
+
 						<td>Saftey</td>
 						<td>
 						<ul>
@@ -71,17 +53,24 @@
 							<li>
 								Disposing of needles
 							</li>
-						</ul></td>
+						</ul>
+						<td>
+						<ul>
+							<%= text_area_tag  :cols=>20,:rows=>5 %>
+						</ul>
+						</td>
+						
+						</td>
 						<td></td>
 					</tr>
 				</table>
-				<%= check_box_tag 'complete','Complete' -%> Complete
+				
 			</div>
 			<h3><a href="#section2">Discuss Barrier: Side Effects</a></h3>
 			<div>
 				<table border="1">
 					<tr>
-						<%= text_area_tag  :cols=>20,:rows=>5 %>
+					
 						<td>For all concerns</td>
 						<td>
 						<ul>
@@ -92,7 +81,11 @@
 								Ask questions and listen to patient to get clearer view of barrier
 							</li>
 						</ul></td>
-						</td> <td> MKT step 4 side effects. We can use the whole section. Also look at additional talking points. Can we include relaxation exercises? </td>
+						</td> <td>
+						<ul>
+						<%= 	text_area_tag  :cols=>20,:rows=>5 %>
+						</ul>
+						</td>
 					</tr>
 					<tr>
 						<td>Anticipate side effects</td>
@@ -108,7 +101,11 @@
 								Knowing what to expect
 							</li>
 						</ul></td>
-						</td> <td> Explain that it’s important to be aware of which side effects need to be reported to the doctor, but that it’s also important not to focus too much on what might happen</td>
+						<<td>
+						<ul>
+						<%= 	text_area_tag  :cols=>20,:rows=>5 %>
+						</ul>
+						</td>
 					</tr>
 					<tr>
 						<td>Actually having side effects</td>
@@ -132,31 +129,24 @@
 						</ul></td>
 						<td>
 						<ul>
-							<li>
-								<font color="red">Adverse event report</font>
-							</li>
-							<li>
-								Problem solving: Let doctor know you are experiencing these side effects. Might be able to give advice on life style, diet, and medication changes to reduce side effects.
-							</li>
-							<li>
-								When in doubt: ask the doctor
-							</li>
-							<li>
-								Cost-benefit exercise
-							</li>
-							<li>
-								Diary/calendar marking exercise (example; put X on calendar for every day you experience a side effect. This week eat no salt and put X’s on calendar)
-							</li>
-						</ul></td>
+						<%= 	text_area_tag  :cols=>20,:rows=>5 %>
+						</ul>
+						</td>
 					</tr>
 					<tr>
 						<td>Confusion: side effect or symptom</td>
 						<td> NS symptom vs. Acthar side effects </td>
+						<td>
+						<ul>
+						<%= 	text_area_tag  :cols=>20,:rows=>5 %>
+						</ul>
+						</td>
 					</tr>
 					<tr>
 						<td>Being on multiple medications</td>
 						<td> Side effects from different medications </td>
 					</tr>
+					
 					<tr>
 						<td>Disability due to side effects</td>
 						<td>
@@ -170,19 +160,17 @@
 							<li>
 								Don' give up!
 							</li>
+							
 						</ul></td>
 						<td>
+						<td>
 						<ul>
-							<li>
-								Talk to family
-							</li>
-							<li>
-								Tips on talking to coworkers or supervisors
-							</li>
-						</ul></td>
+						<%= 	text_area_tag  :cols=>20,:rows=>5 %>
+						</ul>
+						</td>
 					</tr>
 				</table>
-				<%= check_box_tag 'complete','Complete' -%> Complete
+				
 			</div>
 			<h3><a href="#section3">Discuss Barrier: Financial Concerns</a></h3>
 			<div>
@@ -285,7 +273,7 @@
 				</table>
 				<%= check_box_tag 'complete','Complete' -%> Complete
 			</div>
-			
+
 			<h3><a href="#section5">Is it worth it?</a></h3>
 			<div>
 				<%= text_area_tag  :cols=>20,:rows=>5 %>
@@ -302,7 +290,7 @@
 					<li>
 						List item
 					</li>
-					
+
 				</ul>
 				<%= check_box_tag 'complete','Complete' -%> Complete
 			</div>
@@ -337,7 +325,7 @@
 				</ul>
 				<%= check_box_tag 'complete','Complete' -%> Complete
 			</div>
-			
+
 			<h3><a href="#section7">Other emotional barriers</a></h3>
 			<div>
 				<%= text_area_tag  :cols=>20,:rows=>5 %>
@@ -400,6 +388,6 @@
 				</ul>
 				<%= check_box_tag 'complete','Complete' -%> Complete
 			</div>
-			
+
 		</div>
 	</div>
