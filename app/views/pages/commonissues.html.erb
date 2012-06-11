@@ -1,11 +1,63 @@
 <h1>Common Issues</h1>
-<div align=right style="padding: 0px 15px 0px 0px; font-weight:bold ">
-<p>Agree &nbsp; Not Sure &nbsp; Disagree</p>
+<div align=right style="padding: 0px 55px 0px 0px; font-weight:bold ">
+	<p>
+		Yes &nbsp; Not Sure &nbsp; No
+	</p>
 </div>
 <div>
 	<table width="100%" border="1">
 		<tr>
-			<td>I sometimes forget to take my medications </td>
+			<td>I have some concerns about remembering when to take Acthar </td>
+			<td>
+			<form style="float: right; width: 200px">
+				<input type="radio" name="assesment" value="1" style="width: 50px" />
+				<input type="radio" name="assesment" value="2" style="width: 50px" />
+				<input type="radio" name="assesment" value="3" style="width: 50px"/>
+			</form></td>
+		</tr>
+
+		<tr>
+			<td>I have concerns about side effects </td>
+			<td>
+			<form style="float: right; width: 200px">
+				<input type="radio" name="assesment" value="1" style="width: 50px" />
+				<input type="radio" name="assesment" value="2" style="width: 50px" />
+				<input type="radio" name="assesment" value="3" style="width: 50px"/>
+			</form></td>
+		</tr>
+
+		<tr>
+			<td>I have concerns about my medical costs </td>
+			<td>
+			<form style="float: right; width: 200px">
+				<input type="radio" name="assesment" value="1" style="width: 50px" />
+				<input type="radio" name="assesment" value="2" style="width: 50px" />
+				<input type="radio" name="assesment" value="3" style="width: 50px"/>
+			</form></td>
+		</tr>
+
+		<tr>
+			<td>I wonder sometimes if taking Acthar is worth it</td>
+			<td>
+			<form style="float: right; width: 200px">
+				<input type="radio" name="assesment" value="1" style="width: 50px" />
+				<input type="radio" name="assesment" value="2" style="width: 50px" />
+				<input type="radio" name="assesment" value="3" style="width: 50px"/>
+			</form></td>
+		</tr>
+
+		<tr>
+			<td>I don’t understand why I’m supposed to take Acthar or how it helps</td>
+			<td>
+			<form style="float: right; width: 200px">
+				<input type="radio" name="assesment" value="1" style="width: 50px" />
+				<input type="radio" name="assesment" value="2" style="width: 50px" />
+				<input type="radio" name="assesment" value="3" style="width: 50px"/>
+			</form></td>
+		</tr>
+
+		<tr>
+			<td>I have concerns about using an injectable medication</td>
 			<td>
 			<form style="float: right; width: 200px">
 				<input type="radio" name="assesment" value="1" style="width: 50px" />
@@ -14,7 +66,7 @@
 			</form></td>
 		</tr>
 		<tr>
-			<td>I could use better medication routines </td>
+			<td>It’s been hard to cope with my condition and/or taking medication</td>
 			<td>
 			<form style="float: right; width: 200px">
 				<input type="radio" name="assesment" value="1" style="width: 50px" />
@@ -23,52 +75,7 @@
 			</form></td>
 		</tr>
 		<tr>
-			<td>I have side effects that bother me</td>
-			<td>
-			<form style="float: right; width: 200px">
-				<input type="radio" name="assesment" value="1" style="width: 50px" />
-				<input type="radio" name="assesment" value="2" style="width: 50px" />
-				<input type="radio" name="assesment" value="3" style="width: 50px"/>
-			</form></td>
-		</tr>
-		<tr>
-			<td>I have concerns about financial costs</td>
-			<td>
-			<form style="float: right; width: 200px">
-				<input type="radio" name="assesment" value="1" style="width: 50px" />
-				<input type="radio" name="assesment" value="2" style="width: 50px" />
-				<input type="radio" name="assesment" value="3" style="width: 50px"/>
-			</form></td>
-		</tr>
-		<tr>
-			<td>Sometimes taking my medications doesnt feel worth it</td>
-			<td>
-			<form style="float: right; width: 200px">
-				<input type="radio" name="assesment" value="1" style="width: 50px" />
-				<input type="radio" name="assesment" value="2" style="width: 50px" />
-				<input type="radio" name="assesment" value="3" style="width: 50px"/>
-			</form></td>
-		</tr>
-		<tr>
-			<td>I don't understand why I'm supposed to be taking this medication or how it helps</td>
-			<td>
-			<form style="float: right; width: 200px">
-				<input type="radio" name="assesment" value="1" style="width: 50px" />
-				<input type="radio" name="assesment" value="2" style="width: 50px" />
-				<input type="radio" name="assesment" value="3" style="width: 50px"/>
-			</form></td>
-		</tr>
-		<tr>
-			<td>I have other questions or concerns related to my condition or medication</td>
-			<td>
-			<form style="float: right; width: 200px">
-				<input type="radio" name="assesment" value="1" style="width: 50px" />
-				<input type="radio" name="assesment" value="2" style="width: 50px" />
-				<input type="radio" name="assesment" value="3" style="width: 50px"/>
-			</form></td>
-		</tr>
-		<tr>
-			<td>I don't think a new type of medication would be likely to work for me</td>
+			<td>I have other questions or concerns related to taking Acthar</td>
 			<td>
 			<form style="float: right; width: 200px">
 				<input type="radio" name="assesment" value="1" style="width: 50px" />
@@ -77,5 +84,5 @@
 			</form></td>
 		</tr>
 	</table>
-	<%=check_box_tag 'complete','Complete' -%> Complete
+	<%= check_box_tag 'complete','Complete' -%> Complete
 </div>

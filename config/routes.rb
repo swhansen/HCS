@@ -1,10 +1,14 @@
-Hcs::Application.routes.draw do
+Hcs::Application.routes.draw do 
   
   resources :notes
 
-  resources :sessions
-
-  resources :clients
+  resources :sessions do
+    resources :notes
+  end
+  
+  resources :clients do
+    resources :sessions
+  end
 
   resources :users
 

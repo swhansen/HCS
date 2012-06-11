@@ -23,7 +23,7 @@
     <td><%= link_to 'Details', client %></td>
     <td><%= link_to 'Edit', edit_client_path(client) %></td>
     
-    <td><%= link_to 'Destroy', client, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= button_to 'Destroy', client, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>

@@ -1,3 +1,9 @@
-class Client < ActiveRecord::Base
+class Client < ActiveRecord::Base 
   has_many :sessions
 end
+
+
+
+
+
+  

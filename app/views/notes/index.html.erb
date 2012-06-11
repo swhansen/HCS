@@ -19,7 +19,7 @@
     <td><%= note.datetime %></td>
     <td><%= link_to 'Show', note %></td>
     <td><%= link_to 'Edit', edit_note_path(note) %></td>
-    <td><%= link_to 'Destroy', note, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= button_to 'Destroy', note, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>

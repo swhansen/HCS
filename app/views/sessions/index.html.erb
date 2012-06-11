@@ -21,7 +21,7 @@
     <td><%= session.notes %></td>
     <td><%= link_to 'Show', session %></td>
     <td><%= link_to 'Edit', edit_session_path(session) %></td>
-    <td><%= link_to 'Destroy', session, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= button_to 'Destroy', session, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
