@@ -15,9 +15,10 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
+  
   <div class="field">
-    <%= f.label :dob %><br />
-    <%= f.date_select :dob, :start_year => 1920 %>
+    <%= f.label :referral_date %><br />
+    <%= f.date_select :referral_date, :referral_date => 2012 %>
   </div>
   
   <div class="field">
@@ -25,11 +26,21 @@
     <%= f.date_select :enrolldate, :start_year => 2012 %>
   </div>
   
+  <div class="field">
+    <%= f.label :dob %><br />
+    <%= f.date_select :dob, :start_year => 1920 %>
+  </div>
   
   <div class="field">
     <%= f.label :location %><br />
     <%= f.text_field :location %>
   </div>
+  
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  
   <div class="field">
     <%= f.label :sex %><br />
     <%= f.text_field :sex %>
@@ -42,6 +53,23 @@
     <%= f.label :phone %><br />
     <%= f.text_field :phone %>
   </div>
+  <div class="field">
+    <%= f.label :dr_name %><br />
+    <%= f.text_field :dr_name %>
+  </div>
+  <div class="field">
+    <%= f.label :diagnosis %><br />
+    <%= f.text_field :diagnosis %>
+  </div>
+  <div class="field">
+    <%= f.label :rec_at_home %><br />
+    <%= f.text_field :rec_at_home %>
+  </div>
+  <div class="field">
+    <%= f.label :started_injections %><br />
+    <%= f.text_field :started_injections %>
+  </div>
+  
   <div class="field">
     <%= f.label :notes %><br />
     <%= f.text_area :notes, :size => "40x10" %>

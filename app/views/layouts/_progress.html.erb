@@ -2,10 +2,11 @@
 <nav class="round">
 	<ul>
 		<li>
-			<%= button_to "1. Opening", {:controller => 'pages', :action => "opening" } %>
+			<%= link_to '1. Opening', clients_path %>
+<!-- 		<%= link_to "1. Opening", {:controller => 'clients', :action => "index" } %>   -->			
 		</li>
 		<li>
-			<%= button_to "2. Assesment", {:controller => 'pages', :action => "commonissues" } %>
+			<%= link_to "2. Assesment", {:controller => 'pages', :action => "commonissues" } %>
 		</li>
 		<li>
 			<%= button_to "3. Barriers to progress", {:controller => 'pages', :action => "barriers" } %>

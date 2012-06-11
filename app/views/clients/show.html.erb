@@ -1,46 +1,63 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Name:</b>
-  <%= @client.name %>
+<p id="notice">
+	<%= notice %>
 </p>
 
 <p>
-  <b>Dob:</b>
-  <%= @client.dob %>
+	<b>Name:</b>
+	<%= @client.name %>
 </p>
-
 <p>
-  <b>Enroll Date:</b>
-  <%= @client.enrolldate %>
+	<b>Dob:</b>
+	<%= @client.dob %>
 </p>
-
-
 <p>
-  <b>Location:</b>
-  <%= @client.location %>
+	<b>referral Date:</b>
+	<%= @client.referral_date %>
 </p>
-
 <p>
-  <b>Sex:</b>
-  <%= @client.sex %>
+	<b>Enroll Date:</b>
+	<%= @client.enrolldate %>
 </p>
-
 <p>
-  <b>Age:</b>
-  <%= @client.age %>
+	<b>Started Injections:</b>
+	<%= @client.started_injections %>
 </p>
-
 <p>
-  <b>Phone:</b>
-  <%= @client.phone %>
+	<b>Receive Acthar at Home:</b>
+	<%= @client.rec_at_home %>
 </p>
-
 <p>
-  <b>Notes:</b>
-  <%= @client.notes %>
+	<b>Dr. Name:</b>
+	<%= @client.dr_name %>
 </p>
-
+<p>
+	<b>Diagnosis:</b>
+	<%= @client.diagnosis %>
+</p>
+<p>
+	<b>Location-Time Zone:</b>
+	<%= @client.location %>
+</p>
+<p>
+	<b>Address:</b>
+	<%= @client.address %>
+</p>
+<p>
+	<b>Sex:</b>
+	<%= @client.sex %>
+</p>
+<p>
+	<b>Age:</b>
+	<%= @client.age %>
+</p>
+<p>
+	<b>Phone:</b>
+	<%= @client.phone %>
+</p>
+<p>
+	<b>Notes:</b>
+	<%= @client.notes %>
+</p>
 
 <%= link_to 'Edit', edit_client_path(@client) %> |
 <%= link_to 'Back', clients_path %>

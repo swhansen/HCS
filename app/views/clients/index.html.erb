@@ -2,28 +2,28 @@
 
 <table>
   <tr>
+  	<th></th>
     <th>Name</th>
     <th>Dob</th>
     <th>Location</th>
     <th>Sex</th>
-    <th>Age</th>
-    <th></th>
+    <th>Age</th>   
     <th></th>
     <th></th>
   </tr>
 
 <% @clients.each do |client| %>
   <tr>
+  	<td><%= link_to "New Session", {:controller => 'clients', :action => "opening", :id => client } %></td>
     <td><%= client.name %></td>
     <td><%= client.dob %></td>
     <td><%= client.location %></td>
     <td><%= client.sex %></td>
-    <td><%= client.age %></td>
-    <td><%= link_to "New Session", {:controller => 'clients', :action => "opening", :id => client } %></td>
+    <td><%= client.age %></td>   
     <td><%= link_to 'Details', client %></td>
     <td><%= link_to 'Edit', edit_client_path(client) %></td>
     
-    <td><%= button_to 'Destroy', client, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= button_to 'Remove Client', client, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>

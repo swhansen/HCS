@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120506204926) do
+ActiveRecord::Schema.define(:version => 20120611164041) do
 
   create_table "clients", :force => true do |t|
     t.string   "name"
@@ -24,6 +24,12 @@ ActiveRecord::Schema.define(:version => 20120506204926) do
     t.string   "notes"
     t.string   "phone"
     t.date     "enrolldate"
+    t.string   "dr_name"
+    t.string   "diagnosis"
+    t.string   "rec_at_home"
+    t.string   "started_injections"
+    t.date     "referral_date"
+    t.string   "address"
   end
 
   create_table "notes", :force => true do |t|
