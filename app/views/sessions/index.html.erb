@@ -1,10 +1,9 @@
-<h1>Listing sessions</h1>
+<h1>Sessions Administration for Patient</h1>
 
 <table>
   <tr>
     
-    <th>Begintime</th>
-    
+    <th>Begintime</th>   
     <th>Notes</th>
     <th></th>
     <th></th>
@@ -17,9 +16,9 @@
     <td><%= session.begintime %></td>
     
     <td><%= session.notes %></td>
-    <td><%= link_to 'Show', session %></td>
+    <td><%= link_to 'Details', session %></td>
     <td><%= link_to 'Edit', edit_session_path(session) %></td>
-    <td><%= button_to 'Destroy', session, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= button_to 'Remove', session, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>

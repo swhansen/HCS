@@ -1,79 +1,87 @@
-
-<h1>
-	New Session Documentation
-</h1>	
+<h1> New Session Documentation </h1>
 
 <%= link_to 'Begin New Session', sessions_path %>
-				
-<!-- 		<%= link_to "1. Opening", {:controller => 'clients', :action => "index" } %>   -->		
-	
+
+<!-- 		<%= link_to "1. Opening", {:controller => 'clients', :action => "index" } %>   -->
+
 <div class="demo">
 	<div class="demo">
 		<div id="accordion">
-			<h3><a href="#section1">Client Infomation</a></h3>
+			<h3><a href="#section1">Basic Patient Infomation</a></h3>
 			<div>
 				<p>
-	<b>Name:</b>
-	<%= @client.name %>
-</p>
-<p>
-	<b>Dob:</b>
-	<%= @client.dob %>
-</p>
-<p>
-	<b>referral Date:</b>
-	<%= @client.referral_date %>
-</p>
-<p>
-	<b>Enroll Date:</b>
-	<%= @client.enrolldate %>
-</p>
-<p>
-	<b>Started Injections:</b>
-	<%= @client.started_injections %>
-</p>
-<p>
-	<b>Receive Acthar at Home:</b>
-	<%= @client.rec_at_home %>
-</p>
-<p>
-	<b>Dr. Name:</b>
-	<%= @client.dr_name %>
-</p>
-<p>
-	<b>Diagnosis:</b>
-	<%= @client.diagnosis %>
-</p>
-<p>
-	<b>Location-Time Zone:</b>
-	<%= @client.location %>
-</p>
-<p>
-	<b>Address:</b>
-	<%= @client.address %>
-</p>
-<p>
-	<b>Sex:</b>
-	<%= @client.sex %>
-</p>
-<p>
-	<b>Age:</b>
-	<%= @client.age %>
-</p>
-<p>
-	<b>Phone:</b>
-	<%= @client.phone %>
-</p>
-
+					<b>Name:</b>
+					<%= @client.name %>
+				</p>
+				<p>
+					<b>Dob:</b>
+					<%= @client.dob %>
+				</p>
 				
+				
+				<p>
+					<b>Location-Time Zone:</b>
+					<%= @client.location %>
+				</p>
+				<p>
+					<b>Address:</b>
+					<%= @client.address %>
+				</p>
+				<p>
+					<b>Sex:</b>
+					<%= @client.sex %>
+				</p>
+				<p>
+					<b>Age:</b>
+					<%= @client.age %>
+				</p>
+				<p>
+					<b>Phone:</b>
+					<%= @client.phone %>
+				</p>
 
 			</div>
-			<h3><a href="#section2">General Notes</a></h3>
+			
+			<h3><a href="#section2">Details</a></h3>
+			<div>
+				<p>
+					<b>referral Date:</b>
+					<%= @client.referral_date %>
+				</p>
+				<p>
+					<b>Enroll Date:</b>
+					<%= @client.enrolldate %>
+				</p>
+				<p>
+					<b>Started Injections:</b>
+					<%= @client.started_injections %>
+				</p>
+				<p>
+					<b>Receive Acthar at Home:</b>
+					<%= @client.rec_at_home %>
+				</p>
+				<p>
+					<b>Dr. Name:</b>
+					<%= @client.dr_name %>
+				</p>
+				
+				<p>
+					<b>Diagnosis:</b>
+					<%= @client.diagnosis %>
+				</p>
+				
+				
+				
+			</div>
+			
+			
+			
+			<h3><a href="#section3">Overview Notes</a></h3>
 			<div>
 				<p>
 					<%= @client.notes %>
 				</p>
 			</div>
-			
+
 		</div>
 	</div>

@@ -1,4 +1,4 @@
-<h1>Clients</h1>
+<h1>Clients Administration</h1>
 
 <table>
   <tr>
@@ -22,7 +22,7 @@
     <td><%= client.age %></td>
       
     
-    <td><%= link_to "Details", {:controller => 'clients', :action => "opening", :id => client } %></td>
+    <td><%= link_to "Summary", {:controller => 'clients', :action => "opening", :id => client } %></td>
 <!--   <td><%= link_to 'Details', client %></td> -->
 
     <td><%= link_to 'Edit', edit_client_path(client) %></td>    
