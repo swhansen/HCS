@@ -2,20 +2,20 @@
 <nav class="round">
 	<ul>
 		<li>
-			<%= link_to '1. Opening', clients_path %>
+<!--			<%= link_to '1. Opening', clients_path %> -->
 <!-- 		<%= link_to "1. Opening", {:controller => 'clients', :action => "index" } %>   -->			
 		</li>
 		<li>
-			<%= link_to "2. Assesment", {:controller => 'pages', :action => "commonissues" } %>
+			<%= link_to "1. Assesment", {:controller => 'pages', :action => "commonissues" } %>
 		</li>
 		<li>
-			<%= button_to "3. Barriers to progress", {:controller => 'pages', :action => "barriers" } %>
+			<%= button_to "2. Barriers to progress", {:controller => 'pages', :action => "barriers" } %>
 		</li>
 		<li>
-			<%= button_to "4. Positive Advice", {:controller => 'pages', :action => 'positive' } %>
+			<%= button_to "3. Positive Advice", {:controller => 'pages', :action => 'positive' } %>
 		</li>
 		<li>
-			<%= button_to "5. Closing-Scheduling", {:controller => 'pages', :action => 'closing' } %>
+			<%= button_to "4. Closing-Scheduling", {:controller => 'pages', :action => 'closing' } %>
 		</li>
 	</ul>
 </nav>

@@ -1,86 +1,79 @@
-<h1>Opening</h1>
-<p>
-	Page for history review and greating statements
-</p>
+
+<h1>
+	New Session Documentation
+</h1>	
+
+<%= link_to 'Begin New Session', sessions_path %>
+				
+<!-- 		<%= link_to "1. Opening", {:controller => 'clients', :action => "index" } %>   -->		
+	
 <div class="demo">
 	<div class="demo">
 		<div id="accordion">
 			<h3><a href="#section1">Client Infomation</a></h3>
 			<div>
 				<p>
-					<b>Name:</b>
-					<%= @client.name %>
-				</p>
-
-				<p>
-					<b>Dob:</b>
-					<%= @client.dob %>
-				</p>
-
-				<p>
-					<b>Enroll Date:</b>
-					<%= @client.enrolldate %>
-				</p>
-
-				<p>
-					<b>Location:</b>
-					<%= @client.location %>
-				</p>
-
-				<p>
-					<b>Sex:</b>
-					<%= @client.sex %>
-				</p>
-
-				<p>
-					<b>Age:</b>
-					<%= @client.age %>
-				</p>
-
-				<p>
-					<b>Phone:</b>
-					<%= @client.phone %>
-				</p>
+	<b>Name:</b>
+	<%= @client.name %>
+</p>
+<p>
+	<b>Dob:</b>
+	<%= @client.dob %>
+</p>
+<p>
+	<b>referral Date:</b>
+	<%= @client.referral_date %>
+</p>
+<p>
+	<b>Enroll Date:</b>
+	<%= @client.enrolldate %>
+</p>
+<p>
+	<b>Started Injections:</b>
+	<%= @client.started_injections %>
+</p>
+<p>
+	<b>Receive Acthar at Home:</b>
+	<%= @client.rec_at_home %>
+</p>
+<p>
+	<b>Dr. Name:</b>
+	<%= @client.dr_name %>
+</p>
+<p>
+	<b>Diagnosis:</b>
+	<%= @client.diagnosis %>
+</p>
+<p>
+	<b>Location-Time Zone:</b>
+	<%= @client.location %>
+</p>
+<p>
+	<b>Address:</b>
+	<%= @client.address %>
+</p>
+<p>
+	<b>Sex:</b>
+	<%= @client.sex %>
+</p>
+<p>
+	<b>Age:</b>
+	<%= @client.age %>
+</p>
+<p>
+	<b>Phone:</b>
+	<%= @client.phone %>
+</p>
 
 				
 
 			</div>
-			<h3><a href="#section2">Notes</a></h3>
+			<h3><a href="#section2">General Notes</a></h3>
 			<div>
 				<p>
-					<b>Notes:</b>
 					<%= @client.notes %>
 				</p>
 			</div>
-			<h3><a href="#section3">Discussion</a></h3>
-			<div>
-				<p>
-					Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-				</p>
-				<ul>
-					<li>
-						List item
-					</li>
-					<li>
-						List item
-					</li>
-					<li>
-						List item
-					</li>
-					<li>
-						List item
-					</li>
-					<li>
-						List item
-					</li>
-					<li>
-						List item
-					</li>
-					<li>
-						List item
-					</li>
-				</ul>
-				<%= check_box_tag 'complete','Complete' -%> Complete
-			</div>
+			
 		</div>
 	</div>

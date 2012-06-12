@@ -2,10 +2,9 @@
 
 <table>
   <tr>
-    <th>Client</th>
-    <th>User</th>
+    
     <th>Begintime</th>
-    <th>Endtime</th>
+    
     <th>Notes</th>
     <th></th>
     <th></th>
@@ -14,10 +13,9 @@
 
 <% @sessions.each do |session| %>
   <tr>
-    <td><%= session.client_id %></td>
-    <td><%= session.user_id %></td>
+    
     <td><%= session.begintime %></td>
-    <td><%= session.endtime %></td>
+    
     <td><%= session.notes %></td>
     <td><%= link_to 'Show', session %></td>
     <td><%= link_to 'Edit', edit_session_path(session) %></td>
