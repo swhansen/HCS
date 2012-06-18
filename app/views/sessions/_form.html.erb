@@ -1,62 +1,81 @@
 <%= form_for(@session) do |f| %>
-  <% if @session.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@session.errors.count, "error") %> prohibited this session from being saved:</h2>
+<% if @session.errors.any? %>
+<div id="error_explanation">
+	<h2><%= pluralize(@session.errors.count, "error") %> prohibited this session from being saved:</h2>
 
-      <ul>
-      <% @session.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+	<ul>
+		<% @session.errors.full_messages.each do |msg| %>
+		<li>
+			<%= msg %>
+		</li>
+		<% end %>
+	</ul>
+</div>
+<% end %>
 
-  
-  <div class="field">
-    <%= f.label :begintime %><br />
-    <%= f.datetime_select :begintime %>
-  </div>
-  <div class="field">
-    <%= f.label :endtime %><br />
-    <%= f.datetime_select :endtime %>
-  </div>
-  <div class="field">
-    <%= f.label :notes %><br />
-    <%= f.text_area :notes %>
-  </div>
-  
-  
-   <div class="field">
-    <%= f.label :'Injection Concerns' %><br />
-    <%= f.check_box :b1 %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :'Financial Concerns' %><br />
-    <%= f.check_box :b2 %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :'Side Effects' %><br />
-    <%= f.check_box :b3 %>
-  </div>
-  
-  
-  <div class="field">
-    <%= f.label :'Is it worth it' %><br />
-    <%= f.check_box :b4 %>
-  </div>
-  <div class="field">
-    <%= f.label :'Building Routines' %><br />
-    <%= f.check_box :b5 %>
-  </div>
-  <div class="field">
-    <%= f.label :'Other Concerns, Emotional Barriers' %><br />
-    <%= f.check_box :b6 %>
-  </div>
-  
-  
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<div class="field">
+	<%= f.label :begintime %>
+	<br />
+	<%= f.datetime_select :begintime %>
+</div>
+<div class="field">
+	<%= f.label :endtime %>
+	<br />
+	<%= f.datetime_select :endtime %>
+</div>
+<div class="field">
+	<%= f.label :notes %>
+	<br />
+	<%= f.text_area :notes %>
+</div>
+
+<div class="field">
+	<%= f.label :name, ' 1. Injection Concerns - IM' %>
+	<%= f.check_box :b1 %>
+	<%= f.collection_select :bd1, Session::BARRIERS1, :to_s, :to_s, :include_blank => true %>
+</div>
+
+<div class="field">
+	<%= f.label :name,'2. Injection Concerns - SC' %>
+	<%= f.check_box :b2 %>
+	<%= f.collection_select :bd2, Session::BARRIERS2, :to_s, :to_s, :include_blank => true %>
+</div>
+
+<div class="field">
+	<%= f.label :name,'3. Financial Concerns ......' %>
+	<%= f.check_box :b3 %>
+	<%= f.collection_select :bd3, Session::BARRIERS3, :to_s, :to_s, :include_blank => true %>
+</div>
+
+<div class="field">
+	<%= f.label :name,'4. Side Effects ...................' %>
+	<%= f.check_box :b4 %>
+	<%= f.collection_select :bd4, Session::BARRIERS4, :to_s, :to_s, :include_blank => true %>
+</div>
+
+<div class="field">
+	<%= f.label :name,'5. Is it worth it ....................' %>
+	<%= f.check_box :b5 %>
+	<%= f.collection_select :bd5, Session::BARRIERS5, :to_s, :to_s, :include_blank => true %>
+</div>
+<div class="field">
+	<%= f.label :name,'6. Building Routines..........' %>
+	<%= f.check_box :b6 %>
+	<%= f.collection_select :bd6, Session::BARRIERS6, :to_s, :to_s, :include_blank => true %>
+</div>
+<div class="field">
+	<%= f.label :name,'7. Other Concerns, ...........' %>
+	<%= f.check_box :b7 %>
+	<%= f.collection_select :bd7, Session::BARRIERS7, :to_s, :to_s, :include_blank => true %>
+</div>
+<div class="field">
+	<%= f.label :name,'8. Unanswered Questions' %>
+	<%= f.check_box :b8 %>
+	<%= f.collection_select :bd8, Session::BARRIERS8, :to_s, :to_s, :include_blank => true %>
+</div>
+
+
+<div class="actions">
+	<%= f.submit %>
+</div>
 <% end %>

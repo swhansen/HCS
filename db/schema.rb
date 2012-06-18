@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120611190122) do
+ActiveRecord::Schema.define(:version => 20120614131302) do
 
   create_table "clients", :force => true do |t|
     t.string   "name"
@@ -56,6 +56,15 @@ ActiveRecord::Schema.define(:version => 20120611190122) do
     t.boolean  "b5"
     t.boolean  "b6"
     t.boolean  "b7"
+    t.boolean  "b8"
+    t.string   "bd1"
+    t.string   "bd2"
+    t.string   "bd3"
+    t.string   "bd4"
+    t.string   "bd5"
+    t.string   "bd6"
+    t.string   "bd7"
+    t.string   "bd8"
   end
 
   create_table "users", :force => true do |t|

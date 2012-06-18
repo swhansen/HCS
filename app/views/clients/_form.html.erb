@@ -1,80 +1,96 @@
 <%= form_for(@client) do |f| %>
-  <% if @client.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</h2>
+<% if @client.errors.any? %>
+<div id="error_explanation">
+	<h2><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</h2>
 
-      <ul>
-      <% @client.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+	<ul>
+		<% @client.errors.full_messages.each do |msg| %>
+		<li>
+			<%= msg %>
+		</li>
+		<% end %>
+	</ul>
+</div>
+<% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :'Referral Date' %><br />
-    <%= f.date_select :referral_date, :referral_date => 2012 %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :'Enroll Date' %><br />
-    <%= f.date_select :enrolldate, :start_year => 2012 %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :'Date of Birth' %><br />
-    <%= f.date_select :dob, :start_year => 1920 %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :'Location-Time Zone' %><br />
-    <%= f.text_field :location %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :Address %><br />
-    <%= f.text_field :address %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :sex %><br />
-    <%= f.text_field :sex %>
-  </div>
-  <div class="field">
-    <%= f.label :age %><br />
-    <%= f.number_field :age %>
-  </div>
-  <div class="field">
-    <%= f.label :phone %><br />
-    <%= f.text_field :phone %>
-  </div>
-  <div class="field">
-    <%= f.label :dr_name %><br />
-    <%= f.text_field :dr_name %>
-  </div>
-  <div class="field">
-    <%= f.label :diagnosis %><br />
-    <%= f.text_field :diagnosis %>
-  </div>
-  <div class="field">
-    <%= f.label :rec_at_home %><br />
-    <%= f.text_field :rec_at_home %>
-  </div>
-  <div class="field">
-    <%= f.label :started_injections %><br />
-    <%= f.text_field :started_injections %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :notes %><br />
-    <%= f.text_area :notes, :size => "40x10" %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<div class="field">
+	<%= f.label :name %>
+	<br />
+	<%= f.text_field :name %>
+</div>
+
+<div class="field">
+	<%= f.label :name, 'Referral Date' %>
+	<br />
+	<%= f.date_select :referral_date, :referral_date => 2012 %>
+</div>
+
+<div class="field">
+	<%= f.label :name, 'Enroll Date' %>
+	<br />
+	<%= f.date_select :enrolldate, :start_year => 2012 %>
+</div>
+
+<div class="field">
+	<%= f.label :name, 'Date of Birth' %>
+	<br />
+	<%= f.date_select :dob, :start_year => 1920 %>
+</div>
+
+<div class="field">
+	<%= f.label :name, 'Location-Time Zone' %>
+	<br />
+	<%= f.text_field :location %>
+</div>
+
+<div class="field">
+	<%= f.label :name, 'Address' %>
+	<br />
+	<%= f.text_field :address %>
+</div>
+
+<div class="field">
+	<%= f.label :name, 'Sex' %>
+	<br />
+	<%= f.text_field :sex %>
+</div>
+<div class="field">
+	<%= f.label :age %>
+	<br />
+	<%= f.number_field :age %>
+</div>
+<div class="field">
+	<%= f.label :phone %>
+	<br />
+	<%= f.text_field :phone %>
+</div>
+<div class="field">
+	<%= f.label :name, 'Dr. Name'%>
+	<br />
+	<%= f.text_field :dr_name %>
+</div>
+<div class="field">
+	<%= f.label :diagnosis %>
+	<br />
+	<%= f.text_field :diagnosis %>
+</div>
+<div class="field">
+	<%= f.label :name, 'Received at Home' %>
+	<br />
+	<%= f.text_field :rec_at_home %>
+</div>
+<div class="field">
+	<%= f.label :name, 'Started Injections' %>
+	<br />
+	<%= f.text_field :started_injections %>
+</div>
+
+<div class="field">
+	<%= f.label :notes %>
+	<br />
+	<%= f.text_area :notes, :size => "40x10" %>
+</div>
+<div class="actions">
+	<%= f.submit %>
+</div>
 <% end %>

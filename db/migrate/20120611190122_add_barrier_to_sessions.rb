@@ -7,5 +7,6 @@ class AddBarrierToSessions < ActiveRecord::Migration
     add_column :sessions, :b5, :boolean
     add_column :sessions, :b6, :boolean
     add_column :sessions, :b7, :boolean
+    add_column :sessions, :b8, :boolean
   end
 end
