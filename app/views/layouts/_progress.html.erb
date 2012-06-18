@@ -5,19 +5,19 @@
 				<!--			<%= link_to '1. Opening', clients_path %> -->
 				<!-- 		<%= link_to "1. Opening", {:controller => 'clients', :action => "index" } %>   -->
 			</li>
+			
 			<li>
-				<%= link_to "1. Assesment", {:controller => 'pages', :action => "commonissues" } %>
+				<%= link_to "1. Client Hisory", clients_path %>
+			</li>					
+			<li>
+				<%= link_to "2. Assesment", {:controller => 'pages', :action => "commonissues" } %>
+			</li>
+			
+			<li>
+				<%= button_to "3. Barriers to Progress - Reference", {:controller => 'pages', :action => "barriers" } %>
 			</li>
 			<li>
-				<%= button_to "2. Barriers to progress", {:controller => 'pages', :action => "barriers" } %>
-			</li>
-
-			<li>
-				<%= button_to "3. Closing-Scheduling", {:controller => 'pages', :action => 'closing' } %>
-			</li>
-
-			<li>
-				<%= button_to "N. Foo", {:controller => 'pages', :action => 'closing' } %>
+				<%= button_to "4. Closing-Scheduling", {:controller => 'pages', :action => 'closing' } %>
 			</li>
 		</ul>
 	</nav>
